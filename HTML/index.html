@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahishnu J - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b3d91;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 30%;
+      margin-right: 15px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .menu li a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #0b3d91;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #0b3d91;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #062d6d;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .feature {
+      flex: 1 1 300px;
+      max-width: 300px;
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background-color: #f1f5ff;
+    }
+
+    .feature h2 {
+      margin-bottom: 10px;
+      color: #0b3d91;
+    }
+
+    .about,
+    .contact {
+      padding: 60px 20px;
+      background-color: #f9fafc;
+      text-align: center;
+    }
+
+    .about h2,
+    .contact h2 {
+      color: #0b3d91;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 30px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background-color: #0b3d91;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #062d6d;
+    }
+
+    footer {
+      background-color: #0b3d91;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="image.webp" alt="Logo" />
+        Sahishnu Portfolio
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://via.placeholder.com/300x180" alt="Developer Working" />
+    <h1>SAHISHNU J</h1>
+    <p>
+      I am Sahishnu J, a dedicated Computer Science and Engineering student with a strong interest in software development and emerging web technologies. Currently, I am gaining valuable industry experience by working as a Web Development Intern at Codsoft.
+    </p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h2>Ms Office</h2>
+      <p>Optimized for speed and performance.</p>
+    </div>
+    <div class="feature">
+      <h2>Python</h2>
+      <p>Looks great on all devices.</p>
+    </div>
+    <div class="feature">
+      <h2>web development</h2>
+      <p>Sleek design and clean layout.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <li><a href="resume.pdf" target="_blank">Resume</a></li> <!-- Added here -->
+    <p>
+      I'm a passionate CSE student with a strong foundation in programming and web development. At Codsoft, I'm actively contributing to real-time projects, improving my front-end and back-end development skills, and working with modern technologies to build meaningful, user-centered solutions. I'm enthusiastic about learning, collaborating, and creating impactful digital experiences.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+  <h2>Contact Me</h2>
+
+  <p>Email: <a href="mailto:sahishnu536@gmail.com">sahishnu536@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919345382199">+91 93453 82199</a></p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Sahishnu Portfolio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
